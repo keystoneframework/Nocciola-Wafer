@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA9EA1D0-8239-47E2-B651-3EA74015FC64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nocciola.Wafer.Entities</RootNamespace>
+    <AssemblyName>Nocciola.Wafer.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Keystone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5513e25c29868d0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.1.0.0-RC8\lib\net46\Keystone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keystone.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17a4939ffa4cc7a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Carbonite.1.0.0-RC8\lib\net46\Keystone.Carbonite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keystone.Carbonite.Persistence.Relational, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93c20766eaabd675, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.1.0.0-RC8\lib\net46\Keystone.Carbonite.Persistence.Relational.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keystone.Carbonite.Persistence.Relational.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=445bb26b38743beb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.Sql.1.0.0-RC8\lib\net46\Keystone.Carbonite.Persistence.Relational.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Persistence\GelatoDao.cs" />
+    <Compile Include="Persistence\PurchaseOrderSummaryDao.cs" />
+    <Compile Include="Persistence\PurchaseOrderDao.cs" />
+    <Compile Include="Persistence\RestaurantDao.cs" />
+    <Compile Include="Persistence\WaferCarboniteController.cs" />
+    <Compile Include="PurchaseOrderSummary.cs" />
+    <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="Restaurant.cs" />
+    <Compile Include="Gelato.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
