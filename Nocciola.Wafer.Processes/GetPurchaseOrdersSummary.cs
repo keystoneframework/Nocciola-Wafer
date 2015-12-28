@@ -10,7 +10,7 @@ namespace Nocciola.Wafer.Processes
         public GetPurchaseOrdersSummary()
         {
             PagingCriteria = new Paging(5);
-            OrderingCriteria = new OrderBy("Created ASC");
+            OrderingCriteria = new OrderBy("Created DESC");
         }
     }
 }

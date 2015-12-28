@@ -31,35 +31,35 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Keystone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5513e25c29868d0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.1.0.0-RC8\lib\net46\Keystone.dll</HintPath>
+      <HintPath>..\packages\Keystone.1.0.0-RC9\lib\net46\Keystone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17a4939ffa4cc7a0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.1.0.0-RC8\lib\net46\Keystone.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.1.0.0-RC9\lib\net46\Keystone.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Persistence.Relational, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93c20766eaabd675, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.1.0.0-RC8\lib\net46\Keystone.Carbonite.Persistence.Relational.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.1.0.0-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Persistence.Relational.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=445bb26b38743beb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.Sql.1.0.0-RC8\lib\net46\Keystone.Carbonite.Persistence.Relational.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.Sql.1.0.0-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=85621b6024ea625c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.1.0.0-RC8\lib\net46\Keystone.Clockwork.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.1.0.0-RC9\lib\net46\Keystone.Clockwork.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.Bindings.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=631a925ab2852467, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.1.0.0-RC8\lib\net46\Keystone.Clockwork.Bindings.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.1.0.0-RC9\lib\net46\Keystone.Clockwork.Bindings.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f57a7fc1bc8d594e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.1.0.0-RC8\lib\net46\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.1.0.0-RC9\lib\net46\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a13c7a47eb8d9071, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql.1.0.0-RC8\lib\net46\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql.1.0.0-RC9\lib\net46\Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
