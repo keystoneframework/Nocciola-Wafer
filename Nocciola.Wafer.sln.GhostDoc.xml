@@ -15,7 +15,7 @@
   <HelpConfiguration name="HelpFile">
     <OutputPath>.\Help</OutputPath>
     <CleanupOutputPath>true</CleanupOutputPath>
-    <HelpFileName>MyCompany.MyFirstKeystoneApp</HelpFileName>
+    <HelpFileName>Nocciola.Wafer</HelpFileName>
     <ImageFolderPath>..\..\..\..\..\..\..\</ImageFolderPath>
     <Theme />
     <HtmlFormats>
