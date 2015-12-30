@@ -1,9 +1,11 @@
-﻿using Keystone.Carbonite.Persistence.Relational.Sql;
+﻿using Keystone.Quantum;
+using Keystone.Quantum.Persistence.Xml;
+using Keystone.Carbonite.Persistence.Relational.Sql;
 
 namespace Nocciola.Wafer.Entities.Persistence
 {
     public class WaferCarboniteController : SqlCarboniteController
     {
-        public WaferCarboniteController() : base("Data source=(local); Initial catalog=nocciola_wafer; Integrated security=SSPI") { }
+        public WaferCarboniteController() : base(QuantumController.CreateWith<XmlPersistence>()["WaferCarboniteController", "ConnectionString"]) { }
     }
 }

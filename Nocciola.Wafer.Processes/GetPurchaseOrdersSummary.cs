@@ -7,10 +7,6 @@ namespace Nocciola.Wafer.Processes
 {
     public class GetPurchaseOrdersSummary : GetPagedMaster<PurchaseOrderSummary, PurchaseOrderSummaryDao, WaferCarboniteController>
     {
-        public GetPurchaseOrdersSummary()
-        {
-            PagingCriteria = new Paging(5);
-            OrderingCriteria = new OrderBy("Created DESC");
-        }
+        public GetPurchaseOrdersSummary() { OrderingCriteria = new OrderBy("Created DESC"); }
     }
 }

@@ -31,25 +31,35 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Keystone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5513e25c29868d0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.1.0.0-RC9\lib\net46\Keystone.dll</HintPath>
+      <HintPath>..\packages\Keystone.1.0.1-RC9\lib\net46\Keystone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17a4939ffa4cc7a0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.1.0.0-RC9\lib\net46\Keystone.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.1.0.1-RC9\lib\net46\Keystone.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Persistence.Relational, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93c20766eaabd675, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.1.0.0-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.1.0.1-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Persistence.Relational.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=445bb26b38743beb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.Sql.1.0.0-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Persistence.Relational.Sql.1.0.1-RC9\lib\net46\Keystone.Carbonite.Persistence.Relational.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keystone.Quantum, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fd593316eaec7d6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Quantum.1.0.1-RC9\lib\net46\Keystone.Quantum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Keystone.Quantum.Persistence.Xml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5dbe3f989f760b0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Quantum.Persistence.Xml.1.0.1-RC9\lib\net46\Keystone.Quantum.Persistence.Xml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Persistence\GelatoDao.cs" />
@@ -65,6 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Nocciola.Wafer.Entities-Development.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

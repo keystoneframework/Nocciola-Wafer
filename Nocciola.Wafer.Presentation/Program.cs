@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Collections.Generic;
 using Keystone.Polaris;
 using Keystone.Carbonite.Persistence.Relational;
 using Nocciola.Wafer.Processes;
-using Nocciola.Wafer.Entities;
 
 namespace Nocciola.Wafer.Presentation
 {
@@ -45,7 +43,7 @@ namespace Nocciola.Wafer.Presentation
         {
             Console.Write("Creating orders... ");
             new CreatePurchaseOrder { Restaurant = "The italian touch", Gelato = "Cioccolato", Gallons = 10 }.Run();
-            new CreatePurchaseOrder { Restaurant = "Caffè e gelati", Gelato = "Panna", Gallons = 50 }.Run();
+            new CreatePurchaseOrder { Restaurant = "Caffè e gelati", Gelato = "Caffè", Gallons = 50 }.Run();
             new CreatePurchaseOrder { Restaurant = "Caffè e gelati", Gelato = "Nocciola", Gallons = 24 }.Run();
             ShowDoneMessage();
         }
@@ -53,7 +51,7 @@ namespace Nocciola.Wafer.Presentation
         private static void ChangeFirstOrderStatus(string newStatus)
         {
             Console.Write("Change order status...");
-            var firstPurchaseOrdersPage = new GetPurchaseOrdersSummary().Run();
+            var firstPurchaseOrdersPage = new GetPurchaseOrdersSummary() { PagingCriteria = new Paging(1) }.Run();
             if (firstPurchaseOrdersPage.IsNotEmpty())
                 new ChangePurchaseOrderStatus
                 {

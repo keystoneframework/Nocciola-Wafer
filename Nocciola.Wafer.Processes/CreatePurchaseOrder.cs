@@ -3,6 +3,7 @@ using Keystone.Clockwork;
 using Keystone.Clockwork.Activation;
 using Keystone.Clockwork.Validation.DeclarationFirst;
 using Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql;
+using Keystone.Mystere;
 using Nocciola.Wafer.Entities;
 using Nocciola.Wafer.Entities.Persistence;
 
@@ -17,17 +18,16 @@ namespace Nocciola.Wafer.Processes
         public Input<string> Gelato;
 
         [Required]
-        [GreaterOrEqualTo(CompareWith = 1)]
         public Input<int> Gallons;
 
         protected override Gear<Null> OnAssemble()
         {
-            var newPurchaseOrder = new NewPurchaseOrder 
-            {
-                Restaurant = Restaurant,
-                Gelato = Gelato,
-                Gallons = Gallons
-            };
+            var mystere = MystereController.CreateWith<WaferInjectionRules>();
+
+            var newPurchaseOrder = mystere.Build<NewPurchaseOrderProvider>();
+            newPurchaseOrder.Restaurant = Restaurant;
+            newPurchaseOrder.Gelato = Gelato;
+            newPurchaseOrder.Gallons = Gallons;
 
             var setPurchaseOrderStatus = new SetPropertyOf<PurchaseOrder, string>
             {
