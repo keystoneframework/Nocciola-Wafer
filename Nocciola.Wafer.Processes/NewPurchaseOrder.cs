@@ -10,8 +10,8 @@ namespace Nocciola.Wafer.Processes
     {
         protected override PurchaseOrder OnGetNewPurchaseOrder()
         {
-            var restaurant = new GetDetailBy<Restaurant, RestaurantDao, WaferCarboniteController> { FilteringCriteria = new Where("Id = @Id", new PredicateParameter("@Id", Restaurant.Value)) }.Run();
-            var gelato = new GetDetailBy<Gelato, GelatoDao, WaferCarboniteController> { FilteringCriteria = new Where("Id = @Id", new PredicateParameter("@Id", Gelato.Value)) }.Run();
+            var restaurant = new GetDetailBy<Restaurant, RestaurantDao, WaferCarboniteController> { FilteringCriteria = new Where("Id = @Id", new WhereParameter("@Id", Restaurant.Value)) }.Run();
+            var gelato = new GetDetailBy<Gelato, GelatoDao, WaferCarboniteController> { FilteringCriteria = new Where("Id = @Id", new WhereParameter("@Id", Gelato.Value)) }.Run();
 
             return new PurchaseOrder
             {
