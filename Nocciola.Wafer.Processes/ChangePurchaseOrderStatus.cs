@@ -23,7 +23,7 @@ namespace Nocciola.Wafer.Processes
         {
             var getPurchaseOrder = new GetDetailBy<PurchaseOrder, PurchaseOrderDao, WaferCarboniteController>
             {
-                FilteringCriteria = new Where("Id = @Id", new PredicateParameter("@Id", PurchaseOrderId.Value))
+                FilteringCriteria = new Where("Id = @Id", new WhereParameter("@Id", PurchaseOrderId.Value))
             };
 
             var setPurchaseOrderStatus = new SetPropertyOf<PurchaseOrder, string>
