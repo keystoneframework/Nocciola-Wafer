@@ -20,17 +20,16 @@ namespace Nocciola.Wafer.Processes
 
         protected override PurchaseOrder OnRun()
         {
-            var almanac = AlmanacController.CreateWith<CompactPlainTextPersistence>();
+            var almanac = AlmanacController.CreateWith<PlainTextPersistence>("Noccional.Wafer");
             try
             {
-                almanac.WriteInformation("Starting a new purchase order...");
-
+                almanac.WriteEntry(new Information("Starting a new purchase order..."));
                 var newPurchaseOrder = OnGetNewPurchaseOrder();
-                almanac.WriteInformation($"New purchase order ready: {newPurchaseOrder}");
+                almanac.WriteEntry(new Information($"New purchase order ready: {newPurchaseOrder}"));
 
                 return newPurchaseOrder;
             }
-            catch (Exception ex) { almanac.WriteError(ex, "New purchase order failure."); throw ex; }
+            catch (Exception ex) { almanac.WriteEntry(new Error("New purchase order failure.", ex)); throw ex; }
         }
 
         protected abstract PurchaseOrder OnGetNewPurchaseOrder();
