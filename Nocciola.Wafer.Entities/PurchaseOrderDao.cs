@@ -1,7 +1,7 @@
 ﻿using System;
-using Keystone.Carbonite.Persistence.Relational.Sql;
+using Keystone.Carbonite.Diamant.Sql;
 
-namespace Nocciola.Wafer.Entities.Persistence
+namespace Nocciola.Wafer.Entities
 {
     public class PurchaseOrderDao : ConventionFirstSqlDao<PurchaseOrder, Guid> { }
 }

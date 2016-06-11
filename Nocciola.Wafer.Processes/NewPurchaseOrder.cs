@@ -1,8 +1,7 @@
 ﻿using System;
-using Keystone.Carbonite.Persistence.Relational;
-using Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql;
+using Keystone.Carbonite.Diamant;
+using Keystone.Clockwork.To.Carbonite.Diamant.Sql;
 using Nocciola.Wafer.Entities;
-using Nocciola.Wafer.Entities.Persistence;
 
 namespace Nocciola.Wafer.Processes
 {

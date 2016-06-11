@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Linq;
 using Keystone.Polaris;
-using Keystone.Carbonite.Persistence.Relational;
+using Keystone.Carbonite.Diamant;
 using Nocciola.Wafer.Processes;
 
 namespace Nocciola.Wafer.Presentation
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var stopApplication = false;
             do
@@ -81,7 +81,6 @@ namespace Nocciola.Wafer.Presentation
                 purchaseOrdersInCurrentPage.ForEach(order => Console.WriteLine($"{order.RestaurantName,-20}{order.GelatoName,-15}{order.CurrentStatus,-10}{order.Amount,13:c}"));
                 Console.Write(purchaseOrdersInCurrentPage.IsNotEmpty() ? $"-- More --" : "\t\t\n");
                 stopOrderViewing = purchaseOrdersInCurrentPage.IsEmpty() || Console.ReadKey().Key == ConsoleKey.Escape;
-
             } while (!stopOrderViewing);
             ShowDoneMessage();
         }

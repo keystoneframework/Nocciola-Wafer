@@ -1,12 +1,14 @@
-﻿using Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql;
-using Keystone.Carbonite.Persistence.Relational;
+﻿using Keystone.Carbonite.Diamant;
+using Keystone.Clockwork.To.Carbonite.Diamant.Sql;
 using Nocciola.Wafer.Entities;
-using Nocciola.Wafer.Entities.Persistence;
 
 namespace Nocciola.Wafer.Processes
 {
     public class GetPurchaseOrdersSummary : GetPagedMaster<PurchaseOrderSummary, PurchaseOrderSummaryDao, WaferCarboniteController>
     {
-        public GetPurchaseOrdersSummary() { OrderingCriteria = new OrderBy("Created DESC"); }
+        public GetPurchaseOrdersSummary()
+        {
+            OrderingCriteria = new OrderBy("Created DESC");
+        }
     }
 }

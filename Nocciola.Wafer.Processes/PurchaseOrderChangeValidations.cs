@@ -1,5 +1,5 @@
 ﻿using System;
-using Keystone.Clockwork.Validation.DeclarationFirst;
+using Keystone.Clockwork;
 
 namespace Nocciola.Wafer.Processes
 {

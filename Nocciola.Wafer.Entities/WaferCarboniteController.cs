@@ -1,8 +1,8 @@
 ﻿using Keystone.Quantum;
-using Keystone.Quantum.Persistence.Xml;
-using Keystone.Carbonite.Persistence.Relational.Sql;
+using Keystone.Quantum.Xml;
+using Keystone.Carbonite.Diamant.Sql;
 
-namespace Nocciola.Wafer.Entities.Persistence
+namespace Nocciola.Wafer.Entities
 {
     public class WaferCarboniteController : SqlCarboniteController
     {

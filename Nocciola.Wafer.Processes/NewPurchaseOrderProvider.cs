@@ -1,8 +1,7 @@
 ﻿using System;
 using Keystone.Almanac;
-using Keystone.Almanac.Persistence.PlainText;
+using Keystone.Almanac.PlainText;
 using Keystone.Clockwork;
-using Keystone.Clockwork.Validation.DeclarationFirst;
 using Nocciola.Wafer.Entities;
 
 namespace Nocciola.Wafer.Processes

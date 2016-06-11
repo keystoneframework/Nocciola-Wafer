@@ -1,4 +1,4 @@
-﻿using Keystone.Mystere.Injectors;
+﻿using Keystone.Mystere;
 
 namespace Nocciola.Wafer.Processes
 {

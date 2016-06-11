@@ -1,7 +1,7 @@
-﻿using Keystone.Carbonite.Persistence.Relational;
-using Keystone.Carbonite.Persistence.Relational.Sql;
+﻿using Keystone.Carbonite.Diamant;
+using Keystone.Carbonite.Diamant.Sql;
 
-namespace Nocciola.Wafer.Entities.Persistence
+namespace Nocciola.Wafer.Entities
 {
     public class PurchaseOrderSummaryDao : ConfigurationFirstSqlDao<PurchaseOrderSummary>
     {

@@ -1,11 +1,8 @@
 ﻿using Keystone;
 using Keystone.Clockwork;
-using Keystone.Clockwork.Activation;
-using Keystone.Clockwork.Validation.DeclarationFirst;
-using Keystone.Clockwork.Bindings.Carbonite.Persistence.Relational.Sql;
+using Keystone.Clockwork.To.Carbonite.Diamant.Sql;
 using Keystone.Mystere;
 using Nocciola.Wafer.Entities;
-using Nocciola.Wafer.Entities.Persistence;
 
 namespace Nocciola.Wafer.Processes
 {
