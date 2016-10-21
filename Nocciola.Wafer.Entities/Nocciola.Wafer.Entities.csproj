@@ -31,27 +31,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Keystone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5513e25c29868d0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.1.0.37-RC9\lib\net46\Keystone.dll</HintPath>
+      <HintPath>..\packages\Keystone.1.0.48-RC9\lib\net46\Keystone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17a4939ffa4cc7a0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.1.0.37-RC9\lib\net46\Keystone.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.1.0.48-RC9\lib\net46\Keystone.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Diamant, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93c20766eaabd675, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Diamant.1.0.37-RC9\lib\net46\Keystone.Carbonite.Diamant.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Diamant.1.0.48-RC9\lib\net46\Keystone.Carbonite.Diamant.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Diamant.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=445bb26b38743beb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Carbonite.Diamant.Sql.1.0.37-RC9\lib\net46\Keystone.Carbonite.Diamant.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Carbonite.Diamant.Sql.1.0.48-RC9\lib\net46\Keystone.Carbonite.Diamant.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Quantum, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fd593316eaec7d6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Quantum.1.0.37-RC9\lib\net46\Keystone.Quantum.dll</HintPath>
+      <HintPath>..\packages\Keystone.Quantum.1.0.48-RC9\lib\net46\Keystone.Quantum.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Keystone.Quantum.Xml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5dbe3f989f760b0d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Quantum.Xml.1.0.37-RC9\lib\net46\Keystone.Quantum.Xml.dll</HintPath>
+    <Reference Include="Keystone.Quantum.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=05977832cd225c4e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Keystone.Quantum.Json.1.0.48-RC9\lib\net46\Keystone.Quantum.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -74,11 +78,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Nocciola.Wafer.Entities-Development.xml">
+    <None Include="Nocciola.Wafer.Entities-Development.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

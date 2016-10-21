@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Configuration>
-  <Section name="WaferCarboniteController">
-    <Variable name="ConnectionString" value="Data source=(local); Initial catalog=nocciola_wafer; Integrated security=SSPI"/>
-  </Section>
-</Configuration>
