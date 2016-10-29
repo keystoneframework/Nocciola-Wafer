@@ -10,7 +10,7 @@ namespace Nocciola.Wafer.Processes
     public class ChangePurchaseOrderStatus : Mechanism<Null>
     {
         [Required]
-        [NotEqualTo(CompareWith = "00000000-0000-0000-0000-000000000000")]
+        [NotEqualTo("00000000-0000-0000-0000-000000000000")]
         public Input<Guid> PurchaseOrderId;
 
         [Required]
