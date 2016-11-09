@@ -6,7 +6,7 @@ namespace Nocciola.Wafer.Processes
     public class PurchaseOrderChangeValidations
     {
         [Required]
-        [NotEqualTo(CompareWith = "00000000-0000-0000-0000-000000000000")]
+        [NotEqualTo("00000000-0000-0000-0000-000000000000")]
         public Guid Id { get; set; }
 
         [Required]
@@ -23,14 +23,14 @@ namespace Nocciola.Wafer.Processes
         public int Gallons { get; set; }
 
         [Required]
-        [GreaterOrEqualTo(CompareWith = "0")]
+        [GreaterOrEqualTo("0")]
         public decimal TotalPrice { get; set; }
 
         [Required]
         public string ShippingAddress { get; set; }
 
         [Required]
-        [EqualToAny(CompareWith = new[] { "Preparing", "On its way", "Delivered" })]
+        [EqualToAny("Preparing", "On its way", "Delivered")]
         public string Status { get; set; }
     }
 }
