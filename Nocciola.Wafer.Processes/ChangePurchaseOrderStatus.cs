@@ -18,9 +18,9 @@ namespace Nocciola.Wafer.Processes
 
         protected override Gear<Null> OnAssemble()
         {
-            var getPurchaseOrder = new GetDetailBy<PurchaseOrder, PurchaseOrderDao, WaferCarboniteController>
+            var getPurchaseOrder = new GetDetail<PurchaseOrder, PurchaseOrderDao, WaferCarboniteController>
             {
-                FilteringCriteria = new Where("Id = @Id", new WhereParameter("@Id", PurchaseOrderId.Value))
+                Filter = new Where("Id = @Id", new WhereParameter("@Id", PurchaseOrderId.Value))
             };
 
             var setPurchaseOrderStatus = new SetPropertyOf<PurchaseOrder, string>

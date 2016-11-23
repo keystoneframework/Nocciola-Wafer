@@ -51,7 +51,7 @@ namespace Nocciola.Wafer.Presentation
         private static void ChangeFirstOrderStatus(string newStatus)
         {
             Console.Write("Change order status...");
-            var firstPurchaseOrdersPage = new GetPurchaseOrdersSummary() { PagingCriteria = new Paging(1) }.Run();
+            var firstPurchaseOrdersPage = new GetPurchaseOrdersSummary() { Page = new Paging(1) }.Run();
             if (firstPurchaseOrdersPage.IsNotEmpty())
                 new ChangePurchaseOrderStatus
                 {
@@ -77,7 +77,7 @@ namespace Nocciola.Wafer.Presentation
             var stopOrderViewing = false;
             do
             {
-                var purchaseOrdersInCurrentPage = new GetPurchaseOrdersSummary { PagingCriteria = new Paging(5, ++currentViewingPage) }.Run();
+                var purchaseOrdersInCurrentPage = new GetPurchaseOrdersSummary { Page = new Paging(5, ++currentViewingPage) }.Run();
                 purchaseOrdersInCurrentPage.ForEach(order => Console.WriteLine($"{order.RestaurantName,-20}{order.GelatoName,-15}{order.CurrentStatus,-10}{order.Amount,13:c}"));
                 Console.Write(purchaseOrdersInCurrentPage.IsNotEmpty() ? $"-- More --" : "\t\t\n");
                 stopOrderViewing = purchaseOrdersInCurrentPage.IsEmpty() || Console.ReadKey().Key == ConsoleKey.Escape;
