@@ -2,5 +2,5 @@
 
 namespace Nocciola.Wafer.Entities
 {
-    public class GelatoDao : ConventionFirstSqlDao<Gelato, string> { }
+    public class GelatoDao : ConventionFirstSqlDao<Gelato> { }
 }

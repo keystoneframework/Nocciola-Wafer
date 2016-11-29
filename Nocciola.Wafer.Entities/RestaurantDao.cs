@@ -2,5 +2,5 @@
 
 namespace Nocciola.Wafer.Entities
 {
-    public class RestaurantDao : ConventionFirstSqlDao<Restaurant, string> { }
+    public class RestaurantDao : ConventionFirstSqlDao<Restaurant> { }
 }

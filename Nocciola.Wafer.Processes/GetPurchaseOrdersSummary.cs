@@ -4,7 +4,7 @@ using Nocciola.Wafer.Entities;
 
 namespace Nocciola.Wafer.Processes
 {
-    public class GetPurchaseOrdersSummary : GetPagedMaster<PurchaseOrderSummary, PurchaseOrderSummaryDao, WaferCarboniteController>
+    public class GetPurchaseOrdersSummary : GetMaster<PurchaseOrderSummary, PurchaseOrderSummaryDao, WaferCarboniteController>
     {
         public GetPurchaseOrdersSummary()
         {
