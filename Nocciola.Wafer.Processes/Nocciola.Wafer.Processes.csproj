@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nocciola.Wafer.Processes</RootNamespace>
     <AssemblyName>Nocciola.Wafer.Processes</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,47 +32,47 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Keystone, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5513e25c29868d0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Mystere.2.0.5\lib\net46\Keystone.dll</HintPath>
+      <HintPath>..\packages\Keystone.Mystere.2.0.6\lib\net45\Keystone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Almanac, Version=1.0.0.0, Culture=neutral, PublicKeyToken=46b4980b19ad05de, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Almanac.PlainText.2.0.5\lib\net46\Keystone.Almanac.dll</HintPath>
+      <HintPath>..\packages\Keystone.Almanac.PlainText.2.0.6\lib\net45\Keystone.Almanac.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Almanac.PlainText, Version=1.0.0.0, Culture=neutral, PublicKeyToken=90323b727a427a7d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Almanac.PlainText.2.0.5\lib\net46\Keystone.Almanac.PlainText.dll</HintPath>
+      <HintPath>..\packages\Keystone.Almanac.PlainText.2.0.6\lib\net45\Keystone.Almanac.PlainText.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17a4939ffa4cc7a0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Diamant, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93c20766eaabd675, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Carbonite.Diamant.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Carbonite.Diamant.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Carbonite.Diamant.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=445bb26b38743beb, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Carbonite.Diamant.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Carbonite.Diamant.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=85621b6024ea625c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Clockwork.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Clockwork.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.To.Carbonite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=631a925ab2852467, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Clockwork.To.Carbonite.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Clockwork.To.Carbonite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.To.Carbonite.Diamant, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f57a7fc1bc8d594e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Clockwork.To.Carbonite.Diamant.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Clockwork.To.Carbonite.Diamant.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Clockwork.To.Carbonite.Diamant.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a13c7a47eb8d9071, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.5\lib\net46\Keystone.Clockwork.To.Carbonite.Diamant.Sql.dll</HintPath>
+      <HintPath>..\packages\Keystone.Clockwork.To.Carbonite.Diamant.Sql.2.0.6\lib\net45\Keystone.Clockwork.To.Carbonite.Diamant.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Keystone.Mystere, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a89e0e12c9d0ed7c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Keystone.Mystere.2.0.5\lib\net46\Keystone.Mystere.dll</HintPath>
+      <HintPath>..\packages\Keystone.Mystere.2.0.6\lib\net45\Keystone.Mystere.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
